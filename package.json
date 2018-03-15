@@ -1,0 +1,43 @@
+{
+  "name": "cube_summation",
+  "version": "1.0.0",
+  "description": "Prueba técnica integ.ro",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "clean": "rimraf dist",
+    "build": "npm run clean && webpack -p  --config webpack.prod.config.js && cp ./index.html public/"
+  },
+  "author": "zeroEd",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^6.4.1",
+    "babel-preset-env": "^1.1.4",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.26.1",
+    "html-webpack-plugin": "^2.24.1",
+    "react-addons-test-utils": "^0.14.7",
+    "rimraf": "^2.5.4",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.12.13",
+    "webpack-dev-server": "^1.14.0"
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "babel": "^6.23.0",
+    "babel-preset-stage-1": "^6.1.18",
+    "body-parser": "^1.17.2",
+    "consolidate": "*",
+    "cors": "^2.8.3",
+    "express": "^4.15.3",
+    "jquery": "^3.2.1",
+    "method-override": "^2.3.9",
+    "morgan": "^1.7.0",
+    "react": "^0.14.9",
+    "react-dom": "^0.14.9",
+    "webpack": "^1.15.0",
+    "webpack-dev-server": "^1.16.5"
+  }
+}
